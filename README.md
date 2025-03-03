@@ -20,4 +20,9 @@ Create a destination output S3 bucket. This can be another S3 bucket or you can 
 
 IAM stands for Identity and Access Management. It is a web service that helps you securely control access to AWS resources. With IAM, you can manage who (identity) can access what (resources) and under what conditions.
 We created a custom policy called GlueS3AccessPolicy. We used this JSON editor to define the policy. This minimizes security risks by ensuring that Glue only has access to the resources it needs. Make sure to replace “your-bucket-name” with the name of your S3 bucket.
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Policy.png?raw=true)
+
+We attached permissions policies such as AmazonS3FullAccess, AWSGlueServiceRole, AWSGlueConsoleFullAccess.
+![image_alt]()
+
 
