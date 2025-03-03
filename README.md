@@ -14,4 +14,10 @@ Ensure the data you want to query is stored in an S3 bucket in a structured form
 If the data is not stored, then create an S3 bucket and upload the data.
 The data in the S3 bucket is the source data.
 Create a destination output S3 bucket. This can be another S3 bucket or you can create a folder under the first S3 bucket. In this project, we will create a folder called Output Result where we will store the queried data.
-![image_alt]()
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/S3_Image.png?raw=true)
+
+## Step 2: Configure IAM Role
+
+IAM stands for Identity and Access Management. It is a web service that helps you securely control access to AWS resources. With IAM, you can manage who (identity) can access what (resources) and under what conditions.
+We created a custom policy called GlueS3AccessPolicy. We used this JSON editor to define the policy. This minimizes security risks by ensuring that Glue only has access to the resources it needs. Make sure to replace “your-bucket-name” with the name of your S3 bucket.
+
