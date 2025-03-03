@@ -44,7 +44,9 @@ We now need to query the data using Athena. If it’s the first time you are usi
 - SELECT * FROM guardian_news_db.guardian_news;
 - Below is the result of the query we run.
 
-![image_alt]()
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Query%20Result.png?raw=true)
+
+- Let’s verified if the data is loaded in our S3 bucket folder called OutPut_Result.
 
 
 
