@@ -35,7 +35,17 @@ A Glue Crawler scans your S3 bucket and automatically infers the schema, creatin
 
 Select the crawler created and run it. The crawler will scan the S3 bucket, infer the schema, and create/update tables in the Glue Data Catalog. After the crawler finishes, go to the table section in the Glue Console to verify if the table has been created and the schema matches your data.
 
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Table.png?raw=true)
+
+## Step 4: Query Data Using Athena
+We now need to query the data using Athena. If it’s the first time you are using Athena service, you need to set up query results location.
+- Click on Manage and specify an S3 bucket to store query results. In this case, it will be s3://my-guardian-news-bucket/OutPut_Result/
+- In the Athena query editor, select the Glue database created earlier or you can create a new database (guardian_news_db) and write a SQL query to query the table.
+- SELECT * FROM guardian_news_db.guardian_news;
+- Below is the result of the query we run.
+
 ![image_alt]()
+
 
 
 
