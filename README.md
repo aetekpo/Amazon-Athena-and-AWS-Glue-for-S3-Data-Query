@@ -23,6 +23,14 @@ We created a custom policy called GlueS3AccessPolicy. We used this JSON editor t
 ![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Policy.png?raw=true)
 
 We attached permissions policies such as AmazonS3FullAccess, AWSGlueServiceRole, AWSGlueConsoleFullAccess.
+
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Role.png?raw=true)
+
+We created a role called GlueS3AccessRole and attached the policies to it.
+
+## Step 3: Create an AWS Glue Crawler
+A Glue Crawler scans your S3 bucket and automatically infers the schema, creating or updating tables in the Glue Data Catalog. We created a Crawler called Guardian_news_Crawler. Note that when creating your Crawler, select S3 as the data source and add (/) at the end of the data source path. e.g: s3://your-bucket-name/your-data-folder/.
 ![image_alt]()
+
 
 
