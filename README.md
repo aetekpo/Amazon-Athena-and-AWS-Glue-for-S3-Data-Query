@@ -48,6 +48,15 @@ We now need to query the data using Athena. If it’s the first time you are usi
 
 - Let’s verified if the data is loaded in our S3 bucket folder called OutPut_Result.
 
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/OutPut.png?raw=true)
+
+## Step 5: Conclusion
+
+The steps above showed us how to easily query data stored in S3 using Athena, with the Glue Data Catalog serving as the metadata repository. In summary, Amazon Athena is a powerful, serverless query service that enables you to analyze data directly in S3 using SQL. It is ideal for ad-hoc queries, log analysis, and business intelligence, especially when combined with the AWS Glue Data Catalog for schema management.
+
+
+  
+
 
 
 
