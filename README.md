@@ -30,6 +30,11 @@ We created a role called GlueS3AccessRole and attached the policies to it.
 
 ## Step 3: Create an AWS Glue Crawler
 A Glue Crawler scans your S3 bucket and automatically infers the schema, creating or updating tables in the Glue Data Catalog. We created a Crawler called Guardian_news_Crawler. Note that when creating your Crawler, select S3 as the data source and add (/) at the end of the data source path. e.g: s3://your-bucket-name/your-data-folder/.
+
+![image_alt](https://github.com/aetekpo/Amazon-Athena-and-AWS-Glue-for-S3-Data-Query/blob/main/Crawler%20Success.png?raw=true)
+
+Select the crawler created and run it. The crawler will scan the S3 bucket, infer the schema, and create/update tables in the Glue Data Catalog. After the crawler finishes, go to the table section in the Glue Console to verify if the table has been created and the schema matches your data.
+
 ![image_alt]()
 
 
